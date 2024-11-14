@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const RecycleLogo = ({ className }) => (
   <svg
     id="Layer_1"
