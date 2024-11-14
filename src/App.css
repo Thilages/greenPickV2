@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.left-hover{
+  @apply hover:bg-xprimary hover:text-white hover:rounded-l-3xl  hover:rounded-r-md
+}
+.right-hover{
+  @apply hover:bg-xprimary hover:text-white hover:rounded-r-3xl  hover:rounded-l-md 
+}
+.middle-hover{
+  @apply hover:bg-xprimary hover:text-white hover:rounded-lg
+}
+
+.bold{
+  @apply font-bold text-green-600
+}
+
+.text-clamp-hero-title {
+  font-size: clamp(2rem, 4vw, 6rem);
+}
+
+.text-clamp-subtitle {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
+.text-clamp-title2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.text-clamp-paragraph {
+  font-size: clamp(0.5rem, 1.5vw, 1.25rem);
+}
+
+.text-clamp-stats-number {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.text-clamp-stats-label {
+  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+}
+
+.navbar-glass-effect {
+  background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blurring the background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 15px; /* Smooth rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to emphasize the glass look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+/* src/components/Slider.css */
+.clamp-animation-text {
+  font-size: clamp(2.5rem, 5vw + 1rem, 6rem); /* Adjust values as necessary */
+}
+
+.custom-white-text {
+  color: white !important; /* Use !important to enforce the color */
+}
+
+/* Add this to your CSS file */
+
+.logo {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: brightness(1.2);
+}
+
+.partners-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.partner-logo {
+  width: 150px; /* Adjust size as needed */
+  margin: 0 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
